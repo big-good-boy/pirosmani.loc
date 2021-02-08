@@ -142,6 +142,10 @@ body {
             height: 52px;
             background: #00AC4E;
             border-radius: 4px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -159,6 +163,8 @@ body {
 }
 
 .categories {
+    margin-bottom: 24px;
+
     .menu-swiper-container {
         .swiper-slide {
             width: auto !important;
@@ -190,6 +196,107 @@ body {
 
         .swiper-button-disabled {
             opacity: 0;
+        }
+    }
+}
+
+.home-products {
+    .all_products {
+        margin-bottom: 35px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .products-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .product {
+            width: 205px;
+            margin-bottom: 56px;
+
+            .img {
+                background-color: #E5E5E5;
+                background-image: url(../img/product-bg.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 5px;
+                height: 126px;
+                display: flex;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .title {
+                margin: 9px 0 5px;
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: #000;
+                text-decoration: none;
+            }
+            
+            .description {
+                font-size: 14px;
+                line-height: 19px;
+                color: #000;
+                margin-bottom: 8px;
+            }
+
+            .raiting {
+                span {
+                    background: url(../img/star.svg);
+                    width: 13px;
+                    height: 13px;
+                    display: inline-block;
+
+                    &.active {
+                        background: url(../img/star-green.svg);
+                    }
+                }
+            }
+
+            .price {
+                b {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: #000;
+                    margin-right: 18px;
+                }
+
+                span {
+                    font-size: 12px;
+                    line-height: 23px;
+                    color: #828282;
+                }
+            }
+
+            a.to-cart {
+                margin-top: 13px;
+                width: 140px;
+                background: #00AC4E;
+                border-radius: 5px;
+                line-height: 38px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 18px;
+                display: inline-block;
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
