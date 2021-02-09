@@ -163,33 +163,23 @@ body {
 .home-products .all_products {
   margin-bottom: 35px;
 }
-.home-products .row {
-  flex-direction: column;
-}
-.home-products .products-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.home-products .products-wrapper .product {
-  width: 205px;
+.home-products .product {
   margin-bottom: 56px;
 }
-.home-products .products-wrapper .product .img {
+.home-products .product .img {
   background-color: #E5E5E5;
   background-image: url(../img/product-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 5px;
   height: 126px;
-  display: flex;
   overflow: hidden;
 }
-.home-products .products-wrapper .product .img img {
+.home-products .product .img img {
   width: 100%;
   height: 100%;
 }
-.home-products .products-wrapper .product .title {
+.home-products .product .title {
   margin: 9px 0 5px;
   display: block;
   font-weight: 500;
@@ -198,34 +188,34 @@ body {
   color: #000;
   text-decoration: none;
 }
-.home-products .products-wrapper .product .description {
+.home-products .product .description {
   font-size: 14px;
   line-height: 19px;
   color: #000;
   margin-bottom: 8px;
 }
-.home-products .products-wrapper .product .raiting span {
+.home-products .product .raiting span {
   background: url(../img/star.svg);
   width: 13px;
   height: 13px;
   display: inline-block;
 }
-.home-products .products-wrapper .product .raiting span.active {
+.home-products .product .raiting span.active {
   background: url(../img/star-green.svg);
 }
-.home-products .products-wrapper .product .price b {
+.home-products .product .price b {
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
   color: #000;
   margin-right: 18px;
 }
-.home-products .products-wrapper .product .price span {
+.home-products .product .price span {
   font-size: 12px;
   line-height: 23px;
   color: #828282;
 }
-.home-products .products-wrapper .product a.to-cart {
+.home-products .product a.to-cart {
   margin-top: 13px;
   width: 140px;
   background: #00AC4E;
@@ -238,6 +228,6 @@ body {
   color: #fff;
   text-decoration: none;
 }
-.home-products .products-wrapper .product a.to-cart:hover {
+.home-products .product a.to-cart:hover {
   text-decoration: underline;
 }
