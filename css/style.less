@@ -11,6 +11,7 @@ body {
 .main-header {
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    margin-bottom: 60px;
     
     .navbar {
         height: 100px;
@@ -101,7 +102,6 @@ body {
 }
 
 .home-banner {
-    padding-top: 60px;
     margin-bottom: 25px;
     
     .block {
@@ -163,7 +163,7 @@ body {
 }
 
 .categories {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 
     .menu-swiper-container {
         .swiper-slide {
@@ -202,12 +202,12 @@ body {
 
 .home-products {
 
-    .all_products {
-        margin-bottom: 35px;
+    .title {
+        margin-bottom: 40px;
     }
 
     .product {
-        margin-bottom: 56px;
+        margin-bottom: 45px;
         
         .img {
             background-color: #E5E5E5;
@@ -285,6 +285,44 @@ body {
 
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+
+    .pagination-block {
+
+        .pagination {
+            justify-content: center;
+
+            .page-item {
+    
+                &.disabled {
+                    display: none;
+                }
+
+                &.active {
+                    margin: 0 25px;
+                    
+                    .page-link {
+                        background: #00AC4E;
+                        border: none;
+                        color: #fff;
+                    }
+                }
+                
+                .page-link {
+                    border: none;
+                    color: #000000;
+                    font-weight: 500;
+                    padding: 0;
+                    width: 41px;
+                    height: 41px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 3px;
+                    font-size: 20px;
+                }
             }
         }
     }
