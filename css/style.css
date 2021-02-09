@@ -9,6 +9,7 @@ body {
 .main-header {
   background: #FFFFFF;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+  margin-bottom: 60px;
 }
 .main-header .navbar {
   height: 100px;
@@ -80,7 +81,6 @@ body {
   padding: 0;
 }
 .home-banner {
-  padding-top: 60px;
   margin-bottom: 25px;
 }
 .home-banner .block {
@@ -132,7 +132,7 @@ body {
   border-radius: 3px;
 }
 .categories {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 .categories .menu-swiper-container .swiper-slide {
   width: auto !important;
@@ -160,11 +160,11 @@ body {
 .categories .menu-swiper-container .swiper-button-disabled {
   opacity: 0;
 }
-.home-products .all_products {
-  margin-bottom: 35px;
+.home-products .title {
+  margin-bottom: 40px;
 }
 .home-products .product {
-  margin-bottom: 56px;
+  margin-bottom: 45px;
 }
 .home-products .product .img {
   background-color: #E5E5E5;
@@ -230,4 +230,31 @@ body {
 }
 .home-products .product a.to-cart:hover {
   text-decoration: underline;
+}
+.home-products .pagination-block .pagination {
+  justify-content: center;
+}
+.home-products .pagination-block .pagination .page-item.disabled {
+  display: none;
+}
+.home-products .pagination-block .pagination .page-item.active {
+  margin: 0 25px;
+}
+.home-products .pagination-block .pagination .page-item.active .page-link {
+  background: #00AC4E;
+  border: none;
+  color: #fff;
+}
+.home-products .pagination-block .pagination .page-item .page-link {
+  border: none;
+  color: #000000;
+  font-weight: 500;
+  padding: 0;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 20px;
 }
