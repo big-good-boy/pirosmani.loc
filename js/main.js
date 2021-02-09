@@ -1,3 +1,9 @@
+// video
+$('.play_yt').click(function() {
+    $(this).hide();
+    $('.ytvideo').attr('src', 'https://www.youtube.com/embed/fRHA_mrMMH0?autoplay=1');
+})
+
 // Swiper JS
 const bannerSwiper = new Swiper('.swiper-container.banner-swiper-container', {
     slidesPerView: 1,
