@@ -81,7 +81,7 @@ body {
   padding: 0;
 }
 .home-banner {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 .home-banner .block {
   width: 100%;
@@ -134,10 +134,15 @@ body {
 .categories {
   margin-bottom: 30px;
 }
-.categories .swiper-slide {
+.categories .container {
+  max-width: 1352px;
+}
+.categories .container .swiper-slide {
   width: auto !important;
 }
-.categories .swiper-slide a {
+.categories .container .swiper-slide a {
+  display: block;
+  padding: 8px 16px;
   font-size: 23px;
   line-height: 27px;
   text-decoration: none;
@@ -145,19 +150,24 @@ body {
   font-weight: normal;
   color: #4F4F4F;
 }
-.categories .swiper-button-next,
-.categories .swiper-button-prev {
+.categories .container .swiper-slide.active a {
+  border-radius: 5px;
+  background-color: #00AC4E;
+  color: #fff;
+}
+.categories .container .swiper-button-next,
+.categories .container .swiper-button-prev {
   color: #00AC4E;
   background: #fff;
   transition: opacity 0.5s;
 }
-.categories .swiper-button-next {
+.categories .container .swiper-button-next {
   right: 0;
 }
-.categories .swiper-button-prev {
+.categories .container .swiper-button-prev {
   left: 0;
 }
-.categories .swiper-button-disabled {
+.categories .container .swiper-button-disabled {
   opacity: 0;
 }
 .home-products {
